@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CAPTCHA Embed Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🧠 CAPTCHA Embed Gallery</h1>
+  <div class="captcha-container">
+
+    <div class="card">
+      <h2>reCAPTCHA v2</h2>
+      <iframe src="captcha/recaptcha.html" sandbox></iframe>
+      <button onclick="copyEmbed('recaptcha')">📋 Copy Embed Code</button>
+    </div>
+
+    <div class="card">
+      <h2>hCaptcha</h2>
+      <iframe src="captcha/hcaptcha.html" sandbox></iframe>
+      <button onclick="copyEmbed('hcaptcha')">📋 Copy Embed Code</button>
+    </div>
+
+    <div class="card">
+      <h2>Turnstile (Cloudflare)</h2>
+      <iframe src="captcha/turnstile.html" sandbox></iframe>
+      <button onclick="copyEmbed('turnstile')">📋 Copy Embed Code</button>
+    </div>
+
+  </div>
+
+  <textarea id="embed-output" style="position:absolute; left:-9999px;"></textarea>
+  <script src="script.js"></script>
+</body>
+</html>
