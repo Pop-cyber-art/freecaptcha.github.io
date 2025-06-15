@@ -8,6 +8,11 @@ body {
   h1 {
     font-size: 2em;
   }
+
+h2 {
+    font-size: 2em;
+    font-family: Comic Sans MS;
+  }
   
   .captcha-container {
     display: flex;
