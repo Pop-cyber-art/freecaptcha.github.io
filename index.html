@@ -14,19 +14,22 @@
 
     <div class="card">
       <h2>reCAPTCHA v2</h2>
-      <iframe src="captcha/recaptcha.html" width="100" height="150" sandbox></iframe>
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
       <button onclick="copyEmbed('recaptcha')">📋 Copy Embed Code</button>
     </div>
 
     <div class="card">
       <h2>hCaptcha</h2>
-      <iframe src="captcha/hcaptcha.html" width="100" height="150" sandbox></iframe>
+      <script src="https://hcaptcha.com/1/api.js" async defer></script>
+	<div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
       <button onclick="copyEmbed('hcaptcha')">📋 Copy Embed Code</button>
     </div>
 
     <div class="card">
       <h2>Turnstile (Cloudflare)</h2>
-      <iframe src="captcha/turnstile.html" width="100" height="150" sandbox></iframe>
+      <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+	<div class="cf-turnstile" data-sitekey="1x00000000000000000000AA"></div>
       <button onclick="copyEmbed('turnstile')">📋 Copy Embed Code</button>
     </div>
 
